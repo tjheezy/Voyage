@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30CD4C392C036D6F00F1424F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD4C382C036D6F00F1424F /* CameraView.swift */; };
+		30CD4C3B2C036DAB00F1424F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD4C3A2C036DAB00F1424F /* CameraViewController.swift */; };
+		30CD4C3F2C03B7FB00F1424F /* CollectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD4C3E2C03B7FB00F1424F /* CollectingView.swift */; };
+		30CD4C412C03B9EC00F1424F /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD4C402C03B9EC00F1424F /* ImagePredictor.swift */; };
+		30F25BE72C03BF6A0003EF6D /* ObjectPredictor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 30F25BE62C03BF6A0003EF6D /* ObjectPredictor.mlmodel */; };
 		30F544F62C01CA3C00662D64 /* VoyageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F544F52C01CA3C00662D64 /* VoyageApp.swift */; };
 		30F544F82C01CA3C00662D64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F544F72C01CA3C00662D64 /* ContentView.swift */; };
 		30F544FA2C01CA3E00662D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F544F92C01CA3E00662D64 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30CD4C382C036D6F00F1424F /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		30CD4C3A2C036DAB00F1424F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		30CD4C3E2C03B7FB00F1424F /* CollectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectingView.swift; sourceTree = "<group>"; };
+		30CD4C402C03B9EC00F1424F /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		30F25BE62C03BF6A0003EF6D /* ObjectPredictor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ObjectPredictor.mlmodel; sourceTree = "<group>"; };
 		30F544F22C01CA3C00662D64 /* Voyage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F544F52C01CA3C00662D64 /* VoyageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyageApp.swift; sourceTree = "<group>"; };
 		30F544F72C01CA3C00662D64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,10 +61,15 @@
 		30F544F42C01CA3C00662D64 /* Voyage */ = {
 			isa = PBXGroup;
 			children = (
+				30F25BE62C03BF6A0003EF6D /* ObjectPredictor.mlmodel */,
 				30F544F52C01CA3C00662D64 /* VoyageApp.swift */,
 				30F544F72C01CA3C00662D64 /* ContentView.swift */,
 				30F544F92C01CA3E00662D64 /* Assets.xcassets */,
+				30CD4C382C036D6F00F1424F /* CameraView.swift */,
+				30CD4C3A2C036DAB00F1424F /* CameraViewController.swift */,
 				30F544FB2C01CA3E00662D64 /* Preview Content */,
+				30CD4C3E2C03B7FB00F1424F /* CollectingView.swift */,
+				30CD4C402C03B9EC00F1424F /* ImagePredictor.swift */,
 			);
 			path = Voyage;
 			sourceTree = "<group>";
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F25BE72C03BF6A0003EF6D /* ObjectPredictor.mlmodel in Sources */,
+				30CD4C392C036D6F00F1424F /* CameraView.swift in Sources */,
+				30CD4C3F2C03B7FB00F1424F /* CollectingView.swift in Sources */,
+				30CD4C3B2C036DAB00F1424F /* CameraViewController.swift in Sources */,
 				30F544F82C01CA3C00662D64 /* ContentView.swift in Sources */,
+				30CD4C412C03B9EC00F1424F /* ImagePredictor.swift in Sources */,
 				30F544F62C01CA3C00662D64 /* VoyageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +295,7 @@
 				DEVELOPMENT_TEAM = P3GLC5X48U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +325,7 @@
 				DEVELOPMENT_TEAM = P3GLC5X48U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -11,7 +11,7 @@ import SwiftUI
 struct VoyageApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CollectingView()
         }
     }
 }
